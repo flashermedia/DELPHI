@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{88258114-f0de-4e86-bfb4-4d5cec6be50d}</ProjectGuid>
+    <MainSource>USBFlashTools.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\USBFlashTools.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+    <DCC_ExeOutput>..</DCC_ExeOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_ExeOutput>..</DCC_ExeOutput>
+    <DCC_UnitSearchPath>E:\DEV\SARAH_DEAN_EXISTING\Under_SCC\USBFlashTools\DEVELOPMENT_SRC\src\3rd party\DelphiZLib</DCC_UnitSearchPath>
+    <DCC_ResourcePath>E:\DEV\SARAH_DEAN_EXISTING\Under_SCC\USBFlashTools\DEVELOPMENT_SRC\src\3rd party\DelphiZLib</DCC_ResourcePath>
+    <DCC_ObjPath>E:\DEV\SARAH_DEAN_EXISTING\Under_SCC\USBFlashTools\DEVELOPMENT_SRC\src\3rd party\DelphiZLib</DCC_ObjPath>
+    <DCC_IncludePath>E:\DEV\SARAH_DEAN_EXISTING\Under_SCC\USBFlashTools\DEVELOPMENT_SRC\src\3rd party\DelphiZLib</DCC_IncludePath>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">2</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">2057</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Sarah Dean</VersionInfoKeys><VersionInfoKeys Name="FileDescription">USB Flash Tools</VersionInfoKeys><VersionInfoKeys Name="FileVersion">2.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName">USB Flash Tools</VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Copyright 2007 Sarah Dean</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">USBFlashTools.exe</VersionInfoKeys><VersionInfoKeys Name="ProductName">USB Flash Tools</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">2.00</VersionInfoKeys><VersionInfoKeys Name="Comments">http://www.SDean12.org/</VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">USBFlashTools.dpr</Source></Source><Excluded_Packages>
+      
+      <Excluded_Packages Name="$(BDS)\bin\dcldbxcds4100.bpl">CodeGear SimpleDataset Component (DBX)</Excluded_Packages>
+    </Excluded_Packages></Delphi.Personality><ModelSupport>False</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="USBFlashTools.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="About_U.pas">
+      <Form>About_F</Form>
+    </DCCReference>
+    <DCCReference Include="AppGlobals.pas" />
+    <DCCReference Include="form_AdvancedCopy.pas">
+      <Form>frm_AdvancedCopy</Form>
+    </DCCReference>
+    <DCCReference Include="form_BackupRestore.pas">
+      <Form>frmBackupRestore</Form>
+    </DCCReference>
+    <DCCReference Include="form_Main.pas">
+      <Form>frmMain</Form>
+    </DCCReference>
+    <DCCReference Include="form_SecureErase.pas">
+      <Form>frmSecureErase</Form>
+    </DCCReference>
+    <DCCReference Include="form_VerifyCapacity.pas">
+      <Form>frmVerifyCapacity</Form>
+    </DCCReference>
+    <DCCReference Include="frame_Location.pas">
+      <Form>fme_Location</Form>
+    </DCCReference>
+    <DCCReference Include="gzipWrap.pas" />
+  </ItemGroup>
+</Project>
